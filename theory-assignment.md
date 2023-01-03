@@ -53,24 +53,24 @@ The process of adding, removing or updating the modules while the application is
 *Webpack* needs some configuration to be done for using HMR 
 
 ### 8. List down your favourite superpowers of Parcel and describe any 3 of them in your own words.
-  1.minification (removing indentation)
-  2.image optimizations
-    3.compression(renaming variables)
-    4.cleaning our code
-    5.super fast build
-    6.dev and prod builds
-    7.caching while development
-    8.works with older version of browsers
-    9.Https on dev as well npx parcel index.html (--https) 
-    10.Consistent Hashing Algorithm
-    11.Zero configuration
-    12.Tree shaking - Removing unwanted code 
-    13.API proxy
+1. minification (removing indentation)
+  2. image optimizations
+  3. compression(renaming variables)
+    4. cleaning our code
+    5. super fast build
+    6. dev and prod builds
+    7. caching while development
+    8. works with older version of browsers
+    9. Https on dev as well npx parcel index.html (--https) 
+    10. Consistent Hashing Algorithm
+    11. Zero configuration
+    12. Tree shaking - Removing unwanted code 
+    13. API proxy
     
-    My top favourites : 
-    1.`Tree shaking` (described about it in q.no 6)
-    2.`Caching` - Parcel caches everything it builds. f you restart the dev server, Parcel will only rebuild files that have changed since the last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build
-    3.`Image optimization` - Bzy default, Parcel includes lossless image optimization for JPEGs and PNGs in prod. mode, which reduces the size of images without affecting their quality. No configuration or query parameters are required to use. 
+My top favourites : 
+1.`Tree shaking` (described about it in q.no 6)
+2.`Caching` - Parcel caches everything it builds. f you restart the dev server, Parcel will only rebuild files that have changed since the last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build
+3.`Image optimization` - Bzy default, Parcel includes lossless image optimization for JPEGs and PNGs in prod. mode, which reduces the size of images without affecting their quality. No configuration or query parameters are required to use. 
 
 ### 9. What is `.gitignore`? What should we add and not add into it?
     `.gitignore` file is a text file where we can mention the files/directories to ignore. That is, those files/directories will not be pushed into the git repositories. The great advantage of putiing them in *.gitignore* file is that those can be huge in size and those files can be generated with the help of package.json or package-lock.json file. It's very important to put `node_modules` in the .gitignore file since it contains a lot of packages which can be installed later by using package.json file. Other directories that should be placed in .gitignore file are `.parcel-cache` and dist. `package.json` and `package-lock.json` must not be put in `.gitignore` file.
