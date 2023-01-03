@@ -106,3 +106,8 @@ Summary Steps :
 Homework : 
 1. Read Parcel Documentation 
 2. Types of script in script tage in html 
+
+
+## Issues:
+
+One issue I faced while setting up parcel is, though the server was succesfully started,I was getting 404 Page not found when run the application in browser. We were not able to find the root cause for long time. Finally, my npm was outdated and it did not throw any error during build. After updating the npm, it worked. 
