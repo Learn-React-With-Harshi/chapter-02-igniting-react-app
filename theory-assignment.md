@@ -35,14 +35,16 @@
 | Command to install dependecies through npm 
   ```
 npm install <package-name>
-```| Command to install devDependecies through npm 
+```
+| Command to install devDependecies through npm 
   ```
   npm install -D <package-name>
   
   ```    or 
   ```
   npm install --save-dev <package-name>
-  ``` |  
+  ``` 
+|  
 | Eg : react, react-dom       | Eg: parcel     | 
 
 ● What is Tree Shaking?
