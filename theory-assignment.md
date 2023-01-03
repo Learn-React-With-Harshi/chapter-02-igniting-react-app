@@ -85,13 +85,44 @@ My top favourites :
 | During deployment, there is no gurantee that if the version number of the dependencies with which the project was developed (package.json file has the least version of dependencies), will be reproduced and thus the project might not be working as intended | During deployment, the exact version of dependencies will be reproduced and thus the project will be working as intended | 
 | ^ or ~ can be used in version of dependencies in package.json | Only exact version of dependencies must be used in package-lock.json |
 ### 11. Why should I not modify `package-lock.json`?
-
+As the name suggests, it locks the package-lock.json file, since it contains sensitive data which are not indened to modify. As it contains the entire tree of dependencies, modifying any of the entries which might have a dependency to that entry might be affected. This causes inconsistency in the project.
 ### 12. What is `node_modules` ? Is it a good idea to push that on git?
-
+In simple words, `node_modules` holds the source code of the packages that are installed through npm. It is a very bad practice to push `node_modules` to git (source control) since it is huge in size and blow up the project capacity and moreover all the packages in `node_modules` can be re-generated using `package.json` file. 
 ### 13. What is the `dist` folder?
-
+`dist` folder is created once the application is build using `parcel` web application bundler. IT contains the output of the bundler i.e all js files, css files and html files bundled into a single js file, css file and html file that is compressed and minified.
 ### 14. What is `browserlists`. Read about dif bundlers: vite, webpack, parcel
+The  `browserslist` field in package.json can be used to specify which browsers/node.js versions the application supports. The value of this object can be an array of statistics ( % coverage), last versions, Node.js versions, Browser versions or even unreleased versions.
+
+```
+"browsersList" : ["last 2 versions", "> 1%", "not dead"]
+
+```
 
 ### 15. Read about: ^ - caret and ~ - tilda
+| ^version | ~version | 
+| --- | :----: | 
+| In package.json, if a dependency's version is prefixed with ^, then it will be updated to all future minor versions and not any major version | In package.json, if a dependency's version is prefixed with ~, then it will be updated to all future versions and not minor versions | 
+| Eg: "react": "^18.2.0" will use releases from 18.2.0 to < 19.0.0 | "~18.2.0" will use releases from "18.2.0" < 18.3.0 |
 
 ### 16. Read about Script types in html (MDN Docs)
+`type` attribute of the <script> tag indicates the type of script.Until HTML 4,  type is a required attribute. The value of type can be any of the following : 
+
+```
+<script type="" src="app.js"></script>
+```
+In HTML5, type attribute is not mandatory. If type attribute is not present(default), or an empty string (type="") or javascript MIME type (text/javascript or application/ecmascript), it is treated as classic "javascript" file.
+
+```
+<script type="module" src="app.js"></script>
+```
+If the type attribute is set `module`, then the code in that js file is treated as module.
+
+```
+<script type="importmap" src="app.js"></script>
+```
+If the type attribute is set `importmap`, the body of teh element contains importmap ie an JSON object using which the browser can resolve the module specifiers while importing modules.
+
+```
+<script type="{$anyothervalue}" src="app.js"></script>
+```
+If the type attribute contains anyother value, then the code is treated as data block and will not be processed by the browser. A valid MIME type other than Javascript MIME type (Eg: image/png or text/css) must be mentioned. All the other attributes for this type will be ignored even the `src` attribute.
