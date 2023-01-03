@@ -31,28 +31,60 @@
  
 | dependencies                                                    | devDependencies           | 
 | -------------                                                   |:-------------:             | 
-| Packages that are required in the prodouction environment      | Packages that are required in the development environment, and not in prod/testing environment| 
+| Packages that are required in the production environment      | Packages that are required only in the development environment, and not in prod/testing environment| 
 | Command : ```npm install <package-name>```| Command : ```npm install -D <package-name>```or ```npm install --save-dev <package-name>``` |  
-| Eg : react, react-dom       | Eg: parcel     | 
+| Eg : react, react-dom, redux, express, nodemon, babel, mocha (testing)      | Eg: parcel     | 
 
 ### 6. What is Tree Shaking?
+      Tree shaking is a concept in JavaScript to describe the removal of dead code. Tree shaking is done by module bundler like parcel/webpack while bundling multiple javascript files into single files thus improving the web performance.
+      
+      Steps to implement tree shaking : 
+      1. Declare ES6 import and exports for the modules
+      2. Bundler analyses the dependency tree during compilation phase.
+      3. Any uncode code is removed from the final build.
 
-### 7.  What is Hot Module Replacement?
+### 7. What is Hot Module Replacement?
+       The process of adding, removing or updating the modules while the application is running without full reload is called Hot Module Replacement. This feature is available in all module bundlers like Parcel, Webpack,etc.,There are many advantages of this features : 
+       1) The application state is retained which is usually lost during full reload
+       2) Insantly updates the browser when source css/js code is modified.
 
-● List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
+       *Parcel* automatically does HMR while the application uses a framework (Eg:React, Vue). If no framework is used, then HMR can be opted using `module.hot` API 
+       
+       *Webpack* needs some configuration to be done for using HMR 
 
-● What is `.gitignore`? What should we add and not add into it?
+### 8. List down your favourite superpowers of Parcel and describe any 3 of them in your own words.
+    1. minification (removing indentation)
+    2. image optimizations
+    3. compression(renaming variables)
+    4. cleaning our code
+    5. super fast build
+    6. dev and prod builds
+    7. caching while development
+    8. works with older version of browsers
+    9. Https on dev as well npx parcel index.html (--https) 
+    10. Consistent Hashing Algorithm
+    11. Zero configuration
+    12. Tree shaking - Removing unwanted code 
+    13. API proxy
+    
+    My top favourites : 
+    1. `Tree shaking` (described about it in q.no 6)
+    2. `Caching` - Parcel caches everything it builds. f you restart the dev server, Parcel will only rebuild files that have changed since the last time it ran. Parcel automatically tracks all of the files, configuration, plugins, and dev dependencies that are involved in your build
+    3. `Image optimization` - Bzy default, Parcel includes lossless image optimization for JPEGs and PNGs in prod. mode, which reduces the size of images without affecting their quality. No configuration or query parameters are required to use. 
 
-● What is the difference between `package.json` and `package-lock.json`
+### 9. What is `.gitignore`? What should we add and not add into it?
+    `.gitignore` file is a text file where we can mention the files/directories to ignore. That is, those files/directories will not be pushed into the git repositories. The great advantage of putiing them in *.gitignore* file is that those can be huge in size and those files can be generated with the help of package.json or package-lock.json file. It's very important to put `node_modules` in the .gitignore file since it contains a lot of packages which can be installed later by using package.json file. Other directories that should be placed in .gitignore file are `.parcel-cache` and dist. `package.json` and `package-lock.json` must not be put in `.gitignore` file.
 
-● Why should I not modify `package-lock.json`?
+### 10. What is the difference between `package.json` and `package-lock.json`
 
-● What is `node_modules` ? Is it a good idea to push that on git?
+### 11. Why should I not modify `package-lock.json`?
 
-● What is the `dist` folder?
+### 12. What is `node_modules` ? Is it a good idea to push that on git?
 
-● What is `browserlists` Read about dif bundlers: vite, webpack, parcel
+### 13. What is the `dist` folder?
 
-● Read about: ^ - caret and ~ - tilda
+### 14. What is `browserlists`. Read about dif bundlers: vite, webpack, parcel
 
-● Read about Script types in html (MDN Docs)
+### 15. Read about: ^ - caret and ~ - tilda
+
+### 16. Read about Script types in html (MDN Docs)
