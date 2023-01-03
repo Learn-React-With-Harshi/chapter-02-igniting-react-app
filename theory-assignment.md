@@ -1,6 +1,6 @@
 
 # `Learn React With Harshi` Series 
-   Documenting my learning journey of Namaste React Live Course conducted by Akshay Saini
+   Documenting my learning journey of [Namaste React Live Course](https://learn.namastedev.com/) conducted by Akshay Saini
 ## Theory Assignment: `Chapter - 02 Igniting React App`
 ### 1. What is `NPM`?
   `NPM` is one of the popular package manager/software registery for managing development and sharing utilities/packages. One more popular package manager is `yarn`.
