@@ -32,24 +32,26 @@
 | dependencies                                                    | devDependencies           | 
 | -------------                                                   |:-------------:             | 
 | Packages that are required in the prodouction environment      | Packages that are required in the development environment, and not in prod/testing environment| 
-| Command to install dependecies through npm 
+| Command : 
   ```
 npm install <package-name>
 ```
-| Command to install devDependecies through npm 
+| 
+Command : 
   ```
   npm install -D <package-name>
   
-  ```    or 
+  ```   
+   or 
   ```
   npm install --save-dev <package-name>
   ``` 
 |  
 | Eg : react, react-dom       | Eg: parcel     | 
 
-● What is Tree Shaking?
+### 6. What is Tree Shaking?
 
-● What is Hot Module Replacement?
+### 7.  What is Hot Module Replacement?
 
 ● List down your favourite 5 superpowers of Parcel and describe any 3 of them in your own words.
 
