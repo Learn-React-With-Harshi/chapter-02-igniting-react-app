@@ -1,10 +1,10 @@
-**** Igniting React App ****
+## Igniting React App
 
-First class - Created Basic React App 
+. In last class - Created Basic React App 
 
-Today, production ready React App - From scratch without using create react-app
+. Today, production ready React App - From scratch without using create react-app
  
-to Ignite our app  - Bundler eg : vite,parcel,webpack
+. to Ignite our app  - Bundler eg : vite,parcel,webpack
 
 In create react-app, they use webpack bundler 
 
