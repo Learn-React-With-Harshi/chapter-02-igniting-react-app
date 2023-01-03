@@ -1,6 +1,6 @@
 
 # `Learn React With Harshi` Series 
-  learning through Namaste React Live Course conducted by Akshay Saini
+   Documenting my learning journey of Namaste React Live Course conducted by Akshay Saini
 ## Theory Assignment: `Chapter - 02 Igniting React App`
 
 ● - What is `NPM`?
