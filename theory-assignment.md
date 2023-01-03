@@ -32,21 +32,8 @@
 | dependencies                                                    | devDependencies           | 
 | -------------                                                   |:-------------:             | 
 | Packages that are required in the prodouction environment      | Packages that are required in the development environment, and not in prod/testing environment| 
-| Command : 
-  ```
-npm install <package-name>
-```
-| 
-Command : 
-  ```
-  npm install -D <package-name>
-  
-  ```   
-   or 
-  ```
-  npm install --save-dev <package-name>
-  ``` 
-|  
+| Command : ```npm install <package-name>```| 
+Command : ```npm install -D <package-name>```or ```npm install --save-dev <package-name>``` |  
 | Eg : react, react-dom       | Eg: parcel     | 
 
 ### 6. What is Tree Shaking?
