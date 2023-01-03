@@ -3,7 +3,7 @@
    Documenting my learning journey of Namaste React Live Course conducted by Akshay Saini
 ## Theory Assignment: `Chapter - 02 Igniting React App`
 
-● ###What is `NPM`?
+### ● What is `NPM`?
   `NPM` is one of the popular package manager/software registery for managing development and sharing utilities/packages. One more popular package manager is `yarn`.
 
   React app is powered by a lot of helper packages for bundling, optimizing, minifying which can be installed and tracked through npm.
