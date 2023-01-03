@@ -6,39 +6,42 @@
  
 . to Ignite our app  - Bundler eg : vite,parcel,webpack
 
-In create react-app, they use webpack bundler 
+. In create react-app, they use webpack bundler 
 
-Bundler is package/module of javascript code 
+. Bundler is package/module of javascript code 
 
-to have a package in code -> we need Package Manager (eg : npm, yarn)
+. to have a package in code -> we need Package Manager (eg : npm, yarn)
 
+```
 npm init -> create package.json -> initialise our repo with npm 
 npm init -y -> to skip configuration
+```
 
-why npm ? 
+. why npm ? 
 helper packages -> React app is powered by a lot of packages for bundling, optimizing, minifying 
 maven : java :: rnpm : react 
 
-Parcel : 
+`Parcel` : 
+
+```
 npm install package-name -> to install a package named package-name  & node modules (helper functions )is created 
 
 npm install -d package-name -> -D means dev dependency or --save-dev
 
+```
+
 package-lock.json is created and parcel code is updated in node modules 
 
 parcel is in dev dependencies of package-lock  - parcel is needed in dev environment 
-~ update for major version
-^ automatic update for minor version
-without anything - exact version
 
 if update happens, package.json is updated but package-lock.json is not updated 
 
 package-lock.json - dont ignore in git 
-but put node modules in gitignofa-rotate-180
+but put node modules in .gitignore
 
-if i have package-lock.json -> i can regenerate node modules 
+if we have package-lock.json -> we can regenerate node modules 
 
-react cdn - not good way 
+react cdn - is not a good way 
 Good way -> in server thrugh node modules 
 
 npm install react -> in global dependencies not dev dependencies 
