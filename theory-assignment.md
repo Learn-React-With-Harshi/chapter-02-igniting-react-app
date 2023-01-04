@@ -1,5 +1,5 @@
 
-# `Learn React With Harshi` Series 
+# `Learn React With Harshi 👩🏻‍💻 Series`
    Documenting my learning journey of [Namaste React Live Course](https://learn.namastedev.com/) conducted by Akshay Saini
 ## Theory Assignment: `Chapter - 02 Igniting React App` (31/12/2022)
 ### 1. What is `NPM`?
