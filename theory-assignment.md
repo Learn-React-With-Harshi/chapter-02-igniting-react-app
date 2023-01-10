@@ -104,6 +104,9 @@ The  `browserslist` field in package.json can be used to specify which browsers/
 | In package.json, if a dependency's version [majorversion.minorversion.patchversion] is prefixed with `^` , then it will be updated to all future `minor` versions and not any major version | In package.json, if a dependency's version [majorversion.minorversion.patchversion] is prefixed with `~` , then it will be updated to all future `patch` versions and not minor/major versions | 
 | Eg: "react": "^18.2.0" will use releases from 18.2.0 to < 19.0.0 | Eg: "~18.2.0" will use releases from "18.2.0" < 18.3.0 |
 
+Patch version is used for any bug fixes. Minor version is used for adding new functionality. Major version may contain major functionality changes/ some existing features may be deprecated.
+So if ~ is used , user will be updated to all bug fixed patch versions. If ^ is used, user will be updated to all new functionality/ features included minor version.
+
 ### 16. Read about Script types in html (MDN Docs)
 `type` attribute of the <script> tag indicates the type of script.Until HTML 4,  type is a required attribute. The value of type can be any of the following : 
 
