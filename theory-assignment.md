@@ -99,10 +99,10 @@ The  `browserslist` field in package.json can be used to specify which browsers/
 ```
 
 ### 15. Read about: ^ - caret and ~ - tilda
-| ^version | ~version | 
+| ^ version | ~ version | 
 | --- | :----: | 
-| In package.json, if a dependency's version is prefixed with ^, then it will be updated to all future minor versions and not any major version | In package.json, if a dependency's version is prefixed with ~, then it will be updated to all future versions and not minor versions | 
-| Eg: "react": "^18.2.0" will use releases from 18.2.0 to < 19.0.0 | "~18.2.0" will use releases from "18.2.0" < 18.3.0 |
+| In package.json, if a dependency's version is prefixed with `^` , then it will be updated to all future `minor` versions and not any major version | In package.json, if a dependency's version is prefixed with `~` , then it will be updated to all future `patch` versions and not minor/major versions | 
+| Eg: "react": "^18.2.0" will use releases from 18.2.0 to < 19.0.0 where 18 - major version, 2 - minor version and 0 is patch version | Eg: "~18.2.0" will use releases from "18.2.0" < 18.3.0 |
 
 ### 16. Read about Script types in html (MDN Docs)
 `type` attribute of the <script> tag indicates the type of script.Until HTML 4,  type is a required attribute. The value of type can be any of the following : 
